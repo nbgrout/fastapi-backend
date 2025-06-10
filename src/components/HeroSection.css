@@ -1,0 +1,130 @@
+/* HeroSection CSS */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+.hero-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align content at the bottom */
+  align-items: flex-start; /* Left-align the content */
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4); /* Darker shadow for contrast */
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.hero-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.hero-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-container > h1 {
+  font-family: 'Playfair Display', serif !important; /* Elegant font */
+  color: #fff; /* White text */
+  font-size: 120px; /* Larger font size */
+  font-style: normal;
+  font-weight: 700; /* Bold weight */
+  margin-top: 0;
+  margin-left: 20px;
+  z-index: 1;
+  text-align: left;
+  line-height: 1.1; /* Reduced line-height for closer lines */
+  letter-spacing: 1px;
+  position: relative;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for contrast */
+}
+
+/* Adjusting the line heights */
+.hero-container > h1 .line-one {
+  font-size: 78px; /* 65% of the original 120px size */
+  line-height: 1.1; /* Adjust line height to reduce space */
+}
+
+.hero-container > h1 .line-two {
+  font-size: 85px; /* Slightly smaller to balance with line-one */
+  line-height: 1.1; /* Adjust line height to reduce space */
+}
+
+.hero-container > p {
+  margin-top: 8px;
+  color: #fff;
+  font-size: 32px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.hero-btns {
+  margin-top: 32px;
+  z-index: 1;
+}
+
+.hero-btns .btn {
+  margin: 6px;
+}
+
+.fa-play-circle {
+  margin-left: 4px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 960px) {
+  .hero-container > h1 {
+    font-size: 78px; /* Adjusted for screen size */
+    margin-top: 0;
+  }
+
+  .hero-container > h1 .line-one {
+    font-size: 55px; /* Adjusted to 65% of the original for this screen size */
+    line-height: 1.1; /* Adjust line height to reduce space */
+  }
+
+  .hero-container > h1 .line-two {
+    font-size: 60px; /* Adjusted to 65% of the original for this screen size */
+    line-height: 1.1; /* Adjust line height to reduce space */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container > h1 {
+    font-size: 50px; /* Adjusted for smaller screen size */
+    margin-top: 0;
+  }
+
+  .hero-container > h1 .line-one {
+    font-size: 33px; /* Adjusted to 65% of the original for mobile size */
+    line-height: 1.1; /* Adjust line height to reduce space */
+  }
+
+  .hero-container > h1 .line-two {
+    font-size: 35px; /* Adjusted to 65% of the original for mobile size */
+    line-height: 1.1; /* Adjust line height to reduce space */
+  }
+
+  .hero-container > p {
+    font-size: 30px;
+  }
+
+  .btn-mobile {
+    display: block;
+    text-decoration: none;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

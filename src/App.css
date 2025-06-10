@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.home,
+.services,
+.products,
+.sign-up,
+.about {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 3rem; /* Normal desktop size */
+}
+
+.services {
+  background-image: url('/public/images/tools.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.products {
+  background-image: url('/public/images/the_artist.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.sign-up {
+  background-image: url('/public/images/exhibit.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.about {
+  background-image: url('/public/images/the_artist.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+  padding: 2rem;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-image {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 2rem;
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: left;
+}
+
+.about-text h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.about-text p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Mobile: Make hero text bigger */
+@media screen and (max-width: 768px) {
+  .home,
+  .services,
+  .products,
+  .sign-up,
+  .about {
+    font-size: 4rem; /* Bigger text on mobile */
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+}
